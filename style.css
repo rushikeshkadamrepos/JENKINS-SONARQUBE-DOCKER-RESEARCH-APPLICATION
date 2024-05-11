@@ -1,0 +1,252 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0 1rem;
+}
+
+header ul li a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ccc;
+}
+
+.home-section {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+}
+
+.home-section .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-section .intro .passport-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.home-section .intro h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-section .intro p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.experience-section {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+
+.experience-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.experience-section .experience {
+    margin-bottom: 3rem;
+}
+
+.experience-section .experience h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.participations-section {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+
+.participations-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.participations-section .participation {
+    margin-bottom: 3rem;
+}
+
+.participations-section .participation h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-section {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+
+.projects-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.projects-section .project {
+    margin-bottom: 3rem;
+}
+
+.projects-section .project h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.certificates-section {
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.certificates-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.certificates-section .certificate {
+    margin-bottom: 2rem;
+}
+
+.certificates-section .certificate img {
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #444;
+}
+
+.linkedin-section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.linkedin-section .linkedin-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    transition: all 0.3s ease;
+}
+
+.linkedin-section .linkedin-icon:hover {
+    filter: brightness(1) saturate(100%) invert(0%) sepia(0%) saturate(1) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header ul li {
+        padding: 0 0.5rem;
+    }
+
+    .home-section .intro .passport-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-section .intro h2 {
+        font-size: 2rem;
+    }
+
+    .experience-section h2,
+    .participations-section h2,
+    .projects-section h2,
+    .certificates-section h2,
+    .linkedin-section h2 {
+        font-size: 2rem;
+    }
+}
+
+.home-section,
+.experience-section,
+.participations-section,
+.projects-section,
+.certificates-section,
+.linkedin-section,
+.personal-details-section {
+    display: none;
+}
+
+.home-section.active,
+.experience-section.active,
+.participations-section.active,
+.projects-section.active,
+.certificates-section.active,
+.linkedin-section.active,
+.personal-details-section.active {
+    display: block;
+}
+
+.experience-section .experience:nth-child(even),
+.participations-section .participation:nth-child(even),
+.projects-section .project:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.experience-section .experience:hover,
+.participations-section .participation:hover,
+.projects-section .project:hover {
+    background-color: #ddd;
+}
+
+.experience-section .experience h3:hover,
+.participations-section .participation h3:hover,
+.projects-section .project h3:hover {
+    color: #333;
+}
